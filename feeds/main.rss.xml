@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contemplative Coding</title><link>http://proycon.github.io/</link><description>Meditations on language &amp; technology</description><atom:link href="http://proycon.github.io/feeds/main.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 12 Nov 2013 14:01:01 +0100</lastBuildDate><item><title>And so it begins...</title><link>http://proycon.github.io/blog/2013/11/17/new-blog/</link><description>&lt;p&gt;Welcome to my new blog! Here I will talk about software development and show
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contemplative Coding</title><link>http://proycon.github.io/</link><description>Meditations on language &amp; technology</description><atom:link href="http://proycon.github.io/feeds/main.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 17 Nov 2013 12:00:00 +0100</lastBuildDate><item><title>And so it begins...</title><link>http://proycon.github.io/blog/2013/11/17/new-blog/</link><description>&lt;p&gt;Welcome to my new blog! Here I will talk about software development and show
 some of the things I am working on. At times it is good to take some distance
 from coding, and contemplate what you have written. In doing so, I can
 hopefully offer interesting open source tools and ideas to the community.&lt;/p&gt;
@@ -16,4 +16,4 @@ CSS, HTML, Javascript/Jquery.&lt;/p&gt;
 &lt;p&gt;Starting a blog always comes with the obvious but daunting obligation of
 maintaining it. Expect to see an occasional, like bi-monthly, posts. So keep
 posted!&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maarten van Gompel (proycon)</dc:creator><pubDate>Tue, 12 Nov 2013 14:01:01 +0100</pubDate><guid>tag:proycon.github.io,2013-11-17:blog/2013/11/17/new-blog/</guid><category>intro</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maarten van Gompel (proycon)</dc:creator><pubDate>Sun, 17 Nov 2013 12:00:00 +0100</pubDate><guid>tag:proycon.github.io,2013-11-17:blog/2013/11/17/new-blog/</guid><category>intro</category></item></channel></rss>
