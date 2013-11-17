@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Contemplative Coding</title><link href="http://proycon.github.io/" rel="alternate"></link><link href="http://proycon.github.io/feeds/main.atom.xml" rel="self"></link><id>http://proycon.github.io/</id><updated>2013-11-12T14:01:01+01:00</updated><entry><title>And so it begins...</title><link href="http://proycon.github.io/blog/2013/11/17/new-blog/" rel="alternate"></link><updated>2013-11-12T14:01:01+01:00</updated><author><name>Maarten van Gompel (proycon)</name></author><id>tag:proycon.github.io,2013-11-17:blog/2013/11/17/new-blog/</id><summary type="html">&lt;p&gt;Welcome to my new tech blog! My aim here is to show some of the things I'm working on,
-and in doing so hopefully providing others with useful open source tools and
-ideas for their own projects.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Contemplative Coding</title><link href="http://proycon.github.io/" rel="alternate"></link><link href="http://proycon.github.io/feeds/main.atom.xml" rel="self"></link><id>http://proycon.github.io/</id><updated>2013-11-12T14:01:01+01:00</updated><entry><title>And so it begins...</title><link href="http://proycon.github.io/blog/2013/11/17/new-blog/" rel="alternate"></link><updated>2013-11-12T14:01:01+01:00</updated><author><name>Maarten van Gompel (proycon)</name></author><id>tag:proycon.github.io,2013-11-17:blog/2013/11/17/new-blog/</id><summary type="html">&lt;p&gt;Welcome to my new blog! Here I will talk about software development and show
+some of the things I am working on. At times it is good to take some distance
+from coding, and contemplate that what you have written. I doing so, I can
+hopefully offer interesting open source tools and ideas to the community.&lt;/p&gt;
 &lt;p&gt;A small introduction may be in order for those who don't know me yet. My name
-is Maarten van Gompel (aka proycon), and I'm a PhD researcher and scientific
-programmer at the Centre for Language Studies, Radboud University Nijmegen.&lt;/p&gt;
+is &lt;em&gt;Maarten van Gompel&lt;/em&gt; (aka proycon). I am a PhD researcher and scientific
+programmer at the Centre for Language Studies, Radboud University Nijmegen. I
+love both languages as well as technology and I am happily working in the field
+where these two independent interests meet: &lt;em&gt;Natural Language Processing&lt;/em&gt; or &lt;em&gt;Computational Linguistics&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;My PhD project &lt;em&gt;Colibri&lt;/em&gt; focusses on the role of constructions in Machine Translation, as well
+as related techniques such as Cross-Lingual Word Sense Disambiguation.&lt;/p&gt;
+&lt;p&gt;I'm an avid open source advocate and linux fan. My tools of the trade are
+mostly Python and C++, sometimes along with web technologies such as Django,
+CSS, HTML, Javascript/Jquery.&lt;/p&gt;
 &lt;p&gt;Starting a blog always comes with the obvious but daunting obligation of
-maintaining it. Expect to see an occasional, like bi-monthly, post.&lt;/p&gt;
+maintaining it. Expect to see an occasional, like bi-monthly, posts. So keep
+posted!&lt;/p&gt;
 </summary><category term="intro"></category></entry></feed>
