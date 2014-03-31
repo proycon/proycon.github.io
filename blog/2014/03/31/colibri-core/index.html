@@ -13,21 +13,21 @@
 
             <meta property="og:type" content="article"/>
             <meta property="og:title" content="Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core"/>
-            <meta property="og:url" content="http://proycon.github.io/blog/2014/03/31/colibri-core/"/>
+            <meta property="og:url" content="../../../../../blog/2014/03/31/colibri-core/"/>
             <meta property="og:description" content="Colibri Core is open-source software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The software offers tools, that can be used from the command-line, as well as an API that can be used from Python scripts or C++ programs."/>
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://proycon.github.io/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="http://proycon.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://proycon.github.io/theme/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <link href="http://proycon.github.io/theme/css/pygments.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://proycon.github.io/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="../../../../../theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="../../../../../theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../../../../theme/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="../../../../../theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../theme/css/style.css" type="text/css"/>
     <!-- JavaScript plugins (requires jQuery) -->
     <script src="http://code.jquery.com/jquery.js"></script>
 
-        <link href="http://proycon.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="../../../../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Contemplative Coding ATOM Feed"/>
-        <link href="http://proycon.github.io/feeds/all.rss.xml" type="application/atom+xml" rel="alternate"
+        <link href="../../../../../feeds/all.rss.xml" type="application/atom+xml" rel="alternate"
               title="Contemplative Coding RSS Feed"/>
 
 </head>
@@ -42,7 +42,7 @@
                 <span class="icon-bar"></span>
             </button>
             <div id="logo"></div>
-            <a href="http://proycon.github.io" class="navbar-brand"><strong>Contemplative Coding</strong></a>
+            <a href="../../../../.." class="navbar-brand"><strong>Contemplative Coding</strong></a>
             <span id="navbar-subtitle">Meditations on language & technology</span>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -51,11 +51,11 @@
                     <li><a href="http://github.com/proycon">My Code</a></li>
                     <li><a href="http://proycon.anaproy.nl/publications">Publications</a></li>
                         <li class="active">
-                            <a href="http://proycon.github.io/category/main.html">main</a>
+                            <a href="../../../../../category/main.html">main</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://proycon.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                <li><a href="../../../../../archives.html"><i class="icon-th-list"></i>Archives</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -69,7 +69,7 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://proycon.github.io/blog/2014/03/31/colibri-core/"
+                    <a href="../../../../../blog/2014/03/31/colibri-core/"
                        rel="bookmark"
                        title="Permalink to Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core">
                         Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core
@@ -88,34 +88,17 @@
 
 
 <span class="label label-default">Tags</span>
-	<a href="http://proycon.github.io/tag/ngrams.html">ngrams</a>
+	<a href="../../../../../tag/ngrams.html">ngrams</a>
         /
-	<a href="http://proycon.github.io/tag/skipgrams.html">skipgrams</a>
+	<a href="../../../../../tag/skipgrams.html">skipgrams</a>
         /
-	<a href="http://proycon.github.io/tag/python.html">python</a>
+	<a href="../../../../../tag/python.html">python</a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/proycon/work/contemplativecoding/content/2014-03-31-colibri-core.rst</tt>, line 2)</p>
-<p>Title underline too short.</p>
-<pre class="literal-block">
-Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core
-############################################
-</pre>
-</div>
-<p>In this first actual blog post I would like to introduce Natural Language
+                <p>In this first actual blog post I would like to introduce Natural Language
 Processing software I developed in the scope of my Ph.D research at Radboud University Nijmegen: <strong>Colibri Core</strong>.</p>
 <div class="section" id="introduction">
 <h2>Introduction</h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/proycon/work/contemplativecoding/content/2014-03-31-colibri-core.rst</tt>, line 15)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-====
-Introduction
-====
-</pre>
-</div>
 <p>Everything is open-source (GPLv3) and can be obtained from:
 <a class="reference external" href="http://github.com/proycon/colibri-core">http://github.com/proycon/colibri-core</a></p>
 <p>Documentation is available from <a class="reference external" href="http://proycon.github.io/colibri-core/doc/">http://proycon.github.io/colibri-core/doc/</a> ,
@@ -126,15 +109,6 @@ refer to the aforementioned documentation.</p>
 </div>
 <div class="section" id="patterns">
 <h2>Patterns</h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/proycon/work/contemplativecoding/content/2014-03-31-colibri-core.rst</tt>, line 29)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-=======
-Patterns
-=======
-</pre>
-</div>
 <p>Colibri Core is software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The employed notion of <em>pattern</em> or <em>construction</em> encompasses the following categories:</p>
 <ul class="simple">
 <li><strong>n-gram</strong>        <em>n</em> consecutive words</li>
@@ -163,15 +137,6 @@ pointwise information).</p>
 </div>
 <div class="section" id="pattern-models">
 <h2>Pattern Models</h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/proycon/work/contemplativecoding/content/2014-03-31-colibri-core.rst</tt>, line 59)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-=====
-Pattern Models
-=====
-</pre>
-</div>
 <p>At the heart of the sofware is the notion of pattern models. The core tool, to
 be used from the command-line, is <tt class="docutils literal"><span class="pre">colibri-patternmodeller</span></tt> which enables you to
 build pattern models, generate statistical reports, query for specific patterns
@@ -246,14 +211,6 @@ patterns can be shown, which is computed using normalised pointwise mutual infor
 </div>
 <div class="section" id="manipulating-models">
 <h3>Manipulating models</h3>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/proycon/work/contemplativecoding/content/2014-03-31-colibri-core.rst</tt>, line 143)</p>
-<p>Title underline too short.</p>
-<pre class="literal-block">
-Manipulating models
------------
-</pre>
-</div>
 <p>Models can be actively manipulated by filtering and intersecting them with
 other models. They can moreover be manipulated at a more finegrained level from
 Python scripts using the available Python binding.</p>
@@ -266,15 +223,6 @@ coverage metric of such a model thus provides a rough measure of overlap between
 </div>
 <div class="section" id="implementation">
 <h2>Implementation</h2>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/proycon/work/contemplativecoding/content/2014-03-31-colibri-core.rst</tt>, line 155)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-=====
-Implementation
-=====
-</pre>
-</div>
 <p>Colibri Core is entirely implemented in C++, to ensure efficiency with regard
 to speed and memory. A full Python binding, directly interfacing with the native code,
 is available, allowing you to load, query and manipulate Pattern Models from
@@ -283,14 +231,6 @@ Python scripts (version 3 is supported).</p>
 systems such as Linux.</p>
 <div class="section" id="under-the-hood">
 <h3>Under the hood</h3>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/proycon/work/contemplativecoding/content/2014-03-31-colibri-core.rst</tt>, line 168)</p>
-<p>Title underline too short.</p>
-<pre class="literal-block">
-Under the hood
------
-</pre>
-</div>
 <p>The API of Colibri Core offers an ideal foundation for building NLP software
 that works on large numbers of patterns, and which seeks to constrain memory
 usage and attaining high-performance.</p>
@@ -313,9 +253,9 @@ documentation at <a class="reference external" href="http://proycon.github.io/co
         <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'contemplativecoding'; // required: replace example with your forum shortname
+            var disqus_shortname = 'proytechblog'; // required: replace example with your forum shortname
             var disqus_identifier = 'colibri-core';
-            var disqus_url = 'http://proycon.github.io/blog/2014/03/31/colibri-core/';
+            var disqus_url = '../../../../../blog/2014/03/31/colibri-core/';
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function () {
@@ -356,25 +296,25 @@ documentation at <a class="reference external" href="http://proycon.github.io/co
 
 
 
-            <li class="list-group-item"><a href="http://proycon.github.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
+            <li class="list-group-item"><a href="../../../../../tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
                 <li class="list-group-item tag-4">
-                    <a href="http://proycon.github.io/tag/intro.html">
-                        intro
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://proycon.github.io/tag/python.html">
+                    <a href="../../../../../tag/python.html">
                         python
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="http://proycon.github.io/tag/ngrams.html">
-                        ngrams
+                    <a href="../../../../../tag/skipgrams.html">
+                        skipgrams
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="http://proycon.github.io/tag/skipgrams.html">
-                        skipgrams
+                    <a href="../../../../../tag/intro.html">
+                        intro
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="../../../../../tag/ngrams.html">
+                        ngrams
                     </a>
                 </li>
         </ul>
@@ -394,7 +334,7 @@ documentation at <a class="reference external" href="http://proycon.github.io/co
                 if (!window.jXHR) {
                     var jxhr = document.createElement('script');
                     jxhr.type = 'text/javascript';
-                    jxhr.src = 'http://proycon.github.io/theme/js/jXHR.js';
+                    jxhr.src = '../../../../../theme/js/jXHR.js';
                     var s = document.getElementsByTagName('script')[0];
                     s.parentNode.insertBefore(jxhr, s);
                 }
@@ -407,7 +347,7 @@ documentation at <a class="reference external" href="http://proycon.github.io/co
                 });
             });
         </script>
-        <script src="http://proycon.github.io/theme/js/github.js" type="text/javascript"></script>
+        <script src="../../../../../theme/js/github.js" type="text/javascript"></script>
     </section>
     <section>
                 <li class="list-group-item"><h4><i class="icon-folder-open icon-large"></i>Blogroll</h4></li>
@@ -438,13 +378,13 @@ documentation at <a class="reference external" href="http://proycon.github.io/co
 </div>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://proycon.github.io/theme/js/bootstrap.min.js"></script>
+<script src="../../../../../theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://proycon.github.io/theme/js/respond.min.js"></script>
+<script src="../../../../../theme/js/respond.min.js"></script>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'contemplativecoding'; // required: replace example with your forum shortname
+        var disqus_shortname = 'proytechblog'; // required: replace example with your forum shortname
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function () {
