@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contemplative Coding</title><link>http://proycon.github.io/</link><description>Meditations on language &amp; technology</description><atom:link href="http://proycon.github.io/feeds/main.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 12 Nov 2013 14:01:01 +0100</lastBuildDate><item><title>Efficiently modelling n-grams, skipgrams and flexgrams in large corpora with Colibri Core</title><link>http://proycon.github.io/blog/2014/03/31/colibri-core/</link><description>&lt;p&gt;In this first actual blog post I would like to introduce open-source Natural Language
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contemplative Coding</title><link>http://proycon.github.io/</link><description>Meditations on language &amp; technology</description><atom:link href="http://proycon.github.io/feeds/main.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 12 Nov 2013 14:01:01 +0100</lastBuildDate><item><title>Efficiently modelling n-grams, skipgrams and flexgrams from large corpora with Colibri Core</title><link>http://proycon.github.io/blog/2014/03/31/colibri-core/</link><description>&lt;p&gt;In this first actual blog post (yes, it was long overdue, I know) I would like to introduce open-source Natural Language
 Processing software I developed in the scope of my PhD research at Radboud University Nijmegen: &lt;strong&gt;Colibri Core&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;In this blog post I will merely illustrate the paradigm and the features of
-Colibri Core, so you get a clear impression of the possibilities. For more I
-refer to the aforementioned documentation.&lt;/p&gt;
 &lt;div class="section" id="introduction"&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Colibri Core is software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The employed notion of &lt;em&gt;pattern&lt;/em&gt; or &lt;em&gt;construction&lt;/em&gt; encompasses the following categories:&lt;/p&gt;
