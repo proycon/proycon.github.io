@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core</title>
+    <title>Efficiently modelling n-grams, skipgrams and flexgrams in large corpora with Colibri Core</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
     <!-- Open Graph tags -->
 
             <meta property="og:type" content="article"/>
-            <meta property="og:title" content="Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core"/>
+            <meta property="og:title" content="Efficiently modelling n-grams, skipgrams and flexgrams in large corpora with Colibri Core"/>
             <meta property="og:url" content="../../../../../blog/2014/03/31/colibri-core/"/>
             <meta property="og:description" content="Colibri Core is open-source software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The software offers tools, that can be used from the command-line, as well as an API that can be used from Python scripts or C++ programs."/>
 
@@ -71,8 +71,8 @@
                 <h1>
                     <a href="../../../../../blog/2014/03/31/colibri-core/"
                        rel="bookmark"
-                       title="Permalink to Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core">
-                        Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core
+                       title="Permalink to Efficiently modelling n-grams, skipgrams and flexgrams in large corpora with Colibri Core">
+                        Efficiently modelling n-grams, skipgrams and flexgrams in large corpora with Colibri Core
                     </a>
                 </h1>
             </header>
@@ -111,10 +111,10 @@ refer to the aforementioned documentation.</p>
 <h2>Patterns</h2>
 <p>Colibri Core is software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The employed notion of <em>pattern</em> or <em>construction</em> encompasses the following categories:</p>
 <ul class="simple">
-<li><strong>n-gram</strong>        <em>n</em> consecutive words</li>
-<li><strong>skipgram</strong>      An abstract pattern of predetermined length with one or multiple gaps (of
+<li><strong>n-gram</strong>    --    <em>n</em> consecutive words</li>
+<li><strong>skipgram</strong>  --    An abstract pattern of predetermined length with one or multiple gaps (of
 specific size).</li>
-<li><strong>flexgram</strong>      An abstract pattern without predetermined length, with one
+<li><strong>flexgram</strong>  --    An abstract pattern without predetermined length, with one
 or more gaps.</li>
 </ul>
 <p>N-gram extraction may seem fairly trivial at first, with a few lines in your
@@ -124,9 +124,9 @@ approach however makes an unnecessarily high demand on memory resources, this
 often becomes prohibitive if unleashed on large corpora. Colibri Core tries to minimise
 these space requirements in several ways:</p>
 <ul class="simple">
-<li><strong>Binary representation</strong>     Each word type is assigned a numeric class,
+<li><strong>Binary representation</strong> --  Each word type is assigned a numeric class,
 which is encoded in a compact binary format in which highly frequent classes take less space than less frequent classes. Colibri core always uses this representation rather than a full string representation, both on disk and in memory.</li>
-<li><strong>Informed counting</strong>      Counting is performed more intelligently by iteratively processing the corpus in several
+<li><strong>Informed counting</strong> -- Counting is performed more intelligently by iteratively processing the corpus in several
 passes and quickly discarding patterns that won't reach the desired occurrence threshold.</li>
 </ul>
 <p>Skipgram and flexgram extraction are computationally more demanding but have
@@ -144,9 +144,9 @@ and relations, and manipulate models.</p>
 <p>A pattern model is simply a collection of extracted patterns (any of the three categories) and their counts from a
 specific corpus. Pattern models come in two varieties:</p>
 <ul class="simple">
-<li><strong>Unindexed Pattern Model</strong> - The simplest form, which simply stores the
+<li><strong>Unindexed Pattern Model</strong> -- The simplest form, which simply stores the
 patterns and their count.</li>
-<li><strong>Indexed Pattern Model</strong>   - The more informed form, which retains all
+<li><strong>Indexed Pattern Model</strong> -- The more informed form, which retains all
 indices to the original corpus, at the cost of more memory/diskspace.</li>
 </ul>
 <p>The Indexed Pattern Model is much more powerful, and allows more statistics and
@@ -158,11 +158,11 @@ that may instantiate a skipgram (i.e. possible fillings of the gaps).</p>
 <h3>Statistics</h3>
 <p>The statistics that are reported on are:</p>
 <ul class="simple">
-<li><strong>Occurrence count</strong> - The absolute number of times a pattern occurs</li>
-<li><strong>Tokens covered</strong> - The absolute number of tokens in the corpus that a pattern covers. Computed as <tt class="docutils literal">occurrencecount * n</tt>.</li>
-<li><strong>Coverage</strong> - The number of covered tokens, as a fraction of the total number of tokens in the original corpus.</li>
-<li><strong>Frequency</strong> - The frequency of the pattern within its category and size class, so for an ngram of size two, the frequency indicates the frequency amongst all bigrams.</li>
-<li><strong>Types</strong> - The number of unique word types covered.</li>
+<li><strong>Occurrence count</strong> -- The absolute number of times a pattern occurs</li>
+<li><strong>Tokens covered</strong> -- The absolute number of tokens in the corpus that a pattern covers. Computed as <tt class="docutils literal">occurrencecount * n</tt>.</li>
+<li><strong>Coverage</strong> -- The number of covered tokens, as a fraction of the total number of tokens in the original corpus.</li>
+<li><strong>Frequency</strong> -- The frequency of the pattern within its category and size class, so for an ngram of size two, the frequency indicates the frequency amongst all bigrams.</li>
+<li><strong>Types</strong> -- The number of unique word types covered.</li>
 </ul>
 <p>These can be reported afer querying for specific patterns, or for groups (e.g.
 all bigrams). For unindexed models, coverage computation is a mere
@@ -203,9 +203,9 @@ patterns can be shown, which is computed using normalised pointwise mutual infor
 <h3>Relations</h3>
 <p>Various relations can be extracted from patterns in an indexed pattern model:</p>
 <ul class="simple">
-<li><strong>Subsumption relations</strong> - Patterns that are subsumed by larger patterns are called subsumption children, the larger patterns are called subsumption parents. These are the two subsumption relations that can be extracted from an indexed pattern model.</li>
-<li><strong>Successor relations</strong> - Patterns that follow eachother are in a left-of/right-of relation.</li>
-<li><strong>Instantiation relations</strong> - There is a relation between skipgrams and patterns that instantiate them: <tt class="docutils literal">to be {*1*} not {*1*} be</tt> is instantiated by <tt class="docutils literal">to {*1*} or</tt>.</li>
+<li><strong>Subsumption relations</strong> -- Patterns that are subsumed by larger patterns are called subsumption children, the larger patterns are called subsumption parents. These are the two subsumption relations that can be extracted from an indexed pattern model.</li>
+<li><strong>Successor relations</strong> -- Patterns that follow eachother are in a left-of/right-of relation.</li>
+<li><strong>Instantiation relations</strong> -- There is a relation between skipgrams and patterns that instantiate them: <tt class="docutils literal">to be {*1*} not {*1*} be</tt> is instantiated by <tt class="docutils literal">to {*1*} or</tt>.</li>
 </ul>
 <p>A web-based tool is available that allows these relations to be visualised and navigated interactively.</p>
 </div>
@@ -241,7 +241,7 @@ ordered maps, but additional storage backends are envisioned for the future, suc
 prefix tries/suffix tries or suffix arrays.</p>
 <p>A schematic overview of the Colibri Core architecture is available below, consult the
 documentation at <a class="reference external" href="http://proycon.github.io/colibri-core/doc/">http://proycon.github.io/colibri-core/doc/</a> for more details.</p>
-<p>image::http://proycon.github.io/colibri-core/doc/images/arch.png</p>
+<img alt="" src="http://proycon.github.io/colibri-core/doc/images/arch.png" />
 </div>
 </div>
 
@@ -298,8 +298,8 @@ documentation at <a class="reference external" href="http://proycon.github.io/co
 
             <li class="list-group-item"><a href="../../../../../tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
                 <li class="list-group-item tag-4">
-                    <a href="../../../../../tag/python.html">
-                        python
+                    <a href="../../../../../tag/intro.html">
+                        intro
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
@@ -308,13 +308,13 @@ documentation at <a class="reference external" href="http://proycon.github.io/co
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="../../../../../tag/intro.html">
-                        intro
+                    <a href="../../../../../tag/ngrams.html">
+                        ngrams
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="../../../../../tag/ngrams.html">
-                        ngrams
+                    <a href="../../../../../tag/python.html">
+                        python
                     </a>
                 </li>
         </ul>
