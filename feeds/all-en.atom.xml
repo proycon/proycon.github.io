@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Contemplative Coding</title><link href="http://proycon.github.io/" rel="alternate"></link><link href="http://proycon.github.io/feeds/all-en.atom.xml" rel="self"></link><id>http://proycon.github.io/</id><updated>2013-11-12T14:01:01+01:00</updated><entry><title>Efficiently modelling n-grams, skipgrams and flexgrams in large corpora with Colibri Core</title><link href="http://proycon.github.io/blog/2014/03/31/colibri-core/" rel="alternate"></link><updated>2013-11-12T14:01:01+01:00</updated><author><name>Maarten van Gompel (proycon)</name></author><id>tag:proycon.github.io,2014-03-31:blog/2014/03/31/colibri-core/</id><summary type="html">&lt;p&gt;In this first actual blog post I would like to introduce Natural Language
-Processing software I developed in the scope of my Ph.D research at Radboud University Nijmegen: &lt;strong&gt;Colibri Core&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class="section" id="introduction"&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Everything is open-source (GPLv3) and can be obtained from:
-&lt;a class="reference external" href="http://github.com/proycon/colibri-core"&gt;http://github.com/proycon/colibri-core&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Documentation is available from &lt;a class="reference external" href="http://proycon.github.io/colibri-core/doc/"&gt;http://proycon.github.io/colibri-core/doc/&lt;/a&gt; ,
-which documents installation, usage as well as the Python API.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Contemplative Coding</title><link href="http://proycon.github.io/" rel="alternate"></link><link href="http://proycon.github.io/feeds/all-en.atom.xml" rel="self"></link><id>http://proycon.github.io/</id><updated>2013-11-12T14:01:01+01:00</updated><entry><title>Efficiently modelling n-grams, skipgrams and flexgrams in large corpora with Colibri Core</title><link href="http://proycon.github.io/blog/2014/03/31/colibri-core/" rel="alternate"></link><updated>2013-11-12T14:01:01+01:00</updated><author><name>Maarten van Gompel (proycon)</name></author><id>tag:proycon.github.io,2014-03-31:blog/2014/03/31/colibri-core/</id><summary type="html">&lt;p&gt;In this first actual blog post I would like to introduce open-source Natural Language
+Processing software I developed in the scope of my PhD research at Radboud University Nijmegen: &lt;strong&gt;Colibri Core&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;In this blog post I will merely illustrate the paradigm and the features of
 Colibri Core, so you get a clear impression of the possibilities. For more I
 refer to the aforementioned documentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="patterns"&gt;
-&lt;h2&gt;Patterns&lt;/h2&gt;
+&lt;div class="section" id="introduction"&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Colibri Core is software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The employed notion of &lt;em&gt;pattern&lt;/em&gt; or &lt;em&gt;construction&lt;/em&gt; encompasses the following categories:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;strong&gt;n-gram&lt;/strong&gt;    --    &lt;em&gt;n&lt;/em&gt; consecutive words&lt;/li&gt;
@@ -133,6 +126,13 @@ is available, allowing you to load, query and manipulate Pattern Models from
 Python scripts (version 3 is supported).&lt;/p&gt;
 &lt;p&gt;The software offers a powerful command-line tool, designed for Unix-based
 systems such as Linux.&lt;/p&gt;
+&lt;div class="section" id="download-documentation"&gt;
+&lt;h3&gt;Download &amp;amp; Documentation&lt;/h3&gt;
+&lt;p&gt;Everything is open-source (GPLv3) and can be obtained from:
+&lt;a class="reference external" href="http://github.com/proycon/colibri-core"&gt;http://github.com/proycon/colibri-core&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Documentation is available from &lt;a class="reference external" href="http://proycon.github.io/colibri-core/doc/"&gt;http://proycon.github.io/colibri-core/doc/&lt;/a&gt; ,
+which documents installation, usage as well as the Python API.&lt;/p&gt;
+&lt;/div&gt;
 &lt;div class="section" id="under-the-hood"&gt;
 &lt;h3&gt;Under the hood&lt;/h3&gt;
 &lt;p&gt;The API of Colibri Core offers an ideal foundation for building NLP software
