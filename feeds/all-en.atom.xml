@@ -128,7 +128,10 @@ systems such as Linux.&lt;/p&gt;
 &lt;p&gt;Everything is open-source (GPLv3) and can be obtained from:
 &lt;a class="reference external" href="http://github.com/proycon/colibri-core"&gt;http://github.com/proycon/colibri-core&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Documentation is available from &lt;a class="reference external" href="http://proycon.github.io/colibri-core/doc/"&gt;http://proycon.github.io/colibri-core/doc/&lt;/a&gt; ,
-which documents installation, usage as well as the Python API.&lt;/p&gt;
+which documents installation, usage as well as the Python API. A Python
+Tutorial is also available, in the form of an ipython notebook (included in the
+colibri-core source), a read-only version can be found here:
+&lt;a class="reference external" href="http://proycon.github.io/colibri-core/doc/colibricore-python-tutorial.html"&gt;http://proycon.github.io/colibri-core/doc/colibricore-python-tutorial.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="under-the-hood"&gt;
 &lt;h3&gt;Under the hood&lt;/h3&gt;
